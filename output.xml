@@ -1,0 +1,2783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20211004 15:37:42.899" rpa="false" schemaversion="2">
+<suite id="s1" name="New" source="C:\Users\Abdelrahman\Desktop\Doc\Hagar\LastAutomation\APi\Nic.AutomationEstablishment\new">
+<suite id="s1-s1" name="TestCases" source="C:\Users\Abdelrahman\Desktop\Doc\Hagar\LastAutomation\APi\Nic.AutomationEstablishment\new\TestCases">
+<suite id="s1-s1-s1" name="baladyLic" source="C:\Users\Abdelrahman\Desktop\Doc\Hagar\LastAutomation\APi\Nic.AutomationEstablishment\new\TestCases\baladyLic.robot">
+<test id="s1-s1-s1-t1" name="Create Balady license">
+<kw name="login" library="Keywords">
+<arg>${NationalID}</arg>
+<arg>${Password}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211004 15:37:43.131" level="INFO">Opening browser 'chrome' to base url 'https://sbc.sbcsdaia.com/'.</msg>
+<status status="PASS" starttime="20211004 15:37:43.131" endtime="20211004 15:37:45.426"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211004 15:37:45.426" endtime="20211004 15:37:45.547"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_NationalityID}</arg>
+<arg>${NationalID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:45.547" level="INFO">Typing text '1068486370' into text field 'id:Input_NationalID'.</msg>
+<status status="PASS" starttime="20211004 15:37:45.547" endtime="20211004 15:37:45.748"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Pwd}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:45.749" level="INFO">Typing text 'Password123!' into text field 'id:Input_Password'.</msg>
+<status status="PASS" starttime="20211004 15:37:45.748" endtime="20211004 15:37:45.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:45.899" level="INFO">Clicking element 'xpath://button[contains(text(),'تسجيل الدخول')]'.</msg>
+<status status="PASS" starttime="20211004 15:37:45.899" endtime="20211004 15:37:47.591"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:43.115" endtime="20211004 15:37:47.592"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.open("https://baladylicense.sbcsdaia.com/request?rid=9490d18e-82c8-bb5c-c9c8-39faa2435e43&amp;sid=69DE5892-6EC2-4859-AE3B-2C28314A9D38","_self")</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211004 15:37:47.593" level="INFO">Executing JavaScript:
+window.open("https://baladylicense.sbcsdaia.com/request?rid=9490d18e-82c8-bb5c-c9c8-39faa2435e43&amp;sid=69DE5892-6EC2-4859-AE3B-2C28314A9D38","_self")
+Without any arguments.</msg>
+<status status="PASS" starttime="20211004 15:37:47.592" endtime="20211004 15:37:48.292"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:37:51.313" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211004 15:37:48.299" endtime="20211004 15:37:51.313"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div[1]/main/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/section/div/div[2]/table/tbody/tr[2]/td[5]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:51.313" level="INFO">Clicking button 'xpath://*[@id="root"]/div[1]/main/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/section/div/div[2]/table/tbody/tr[2]/td[5]/button[2]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:37:51.529" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-118.png"&gt;&lt;img src="selenium-screenshot-118.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:37:51.351" endtime="20211004 15:37:51.529"/>
+</kw>
+<msg timestamp="20211004 15:37:51.536" level="FAIL">Button with locator 'xpath://*[@id="root"]/div[1]/main/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/section/div/div[2]/table/tbody/tr[2]/td[5]/button[2]' not found.</msg>
+<status status="FAIL" starttime="20211004 15:37:51.313" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="exampleModal"]/div/div/div[3]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Add second License" library="Keywords">
+<arg>${Activity}</arg>
+<arg>${totalArea}</arg>
+<arg>${new_address}</arg>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Add more details of license" library="Keywords">
+<arg>${floor_count}</arg>
+<arg>${unitNumber}</arg>
+<arg>${windowsNumber}</arg>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Add board &amp; Certificate" library="Keywords">
+<arg>${boardvalue}</arg>
+<arg>${baord_area}</arg>
+<arg>${cdCertificateNumber}</arg>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<kw name="verify license add successfully" library="Keywords">
+<status status="NOT RUN" starttime="20211004 15:37:51.536" endtime="20211004 15:37:51.536"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:37:43.115" endtime="20211004 15:37:51.536">Button with locator 'xpath://*[@id="root"]/div[1]/main/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/section/div/div[2]/table/tbody/tr[2]/td[5]/button[2]' not found.</status>
+</test>
+<status status="FAIL" starttime="20211004 15:37:42.931" endtime="20211004 15:37:51.551"/>
+</suite>
+<suite id="s1-s1-s2" name="Est" source="C:\Users\Abdelrahman\Desktop\Doc\Hagar\LastAutomation\APi\Nic.AutomationEstablishment\new\TestCases\est.robot">
+<test id="s1-s1-s2-t1" name="Create Establishment Request As Owner">
+<kw name="login" library="Keywords">
+<arg>${NationalID}</arg>
+<arg>${Password}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211004 15:37:51.567" level="INFO">Opening browser 'chrome' to base url 'https://sbc.sbcsdaia.com/'.</msg>
+<status status="PASS" starttime="20211004 15:37:51.567" endtime="20211004 15:37:53.919"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211004 15:37:53.921" endtime="20211004 15:37:54.056"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_NationalityID}</arg>
+<arg>${NationalID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:54.058" level="INFO">Typing text '1068486370' into text field 'id:Input_NationalID'.</msg>
+<status status="PASS" starttime="20211004 15:37:54.056" endtime="20211004 15:37:54.275"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Pwd}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:54.276" level="INFO">Typing text 'Password123!' into text field 'id:Input_Password'.</msg>
+<status status="PASS" starttime="20211004 15:37:54.275" endtime="20211004 15:37:54.412"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:54.414" level="INFO">Clicking element 'xpath://button[contains(text(),'تسجيل الدخول')]'.</msg>
+<status status="PASS" starttime="20211004 15:37:54.413" endtime="20211004 15:37:56.309"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:51.567" endtime="20211004 15:37:56.309"/>
+</kw>
+<kw name="Create Establishment" library="Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_start}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:56.313" level="INFO">Clicking element 'xpath://a[@class='link-nav mx-auto wobble-vertical']'.</msg>
+<status status="PASS" starttime="20211004 15:37:56.311" endtime="20211004 15:37:56.424"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>click element</arg>
+<arg>${btn_est}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_est}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:56.427" level="INFO">Clicking element 'xpath://div[@class='homepage withp']//div[1]//a[1]//div[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:37:57.654" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-119.png"&gt;&lt;img src="selenium-screenshot-119.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:37:57.506" endtime="20211004 15:37:57.654"/>
+</kw>
+<msg timestamp="20211004 15:37:57.654" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1104, 1298)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:37:56.426" endtime="20211004 15:37:57.654"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_est}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:57.870" level="INFO">Clicking element 'xpath://div[@class='homepage withp']//div[1]//a[1]//div[1]'.</msg>
+<status status="PASS" starttime="20211004 15:37:57.870" endtime="20211004 15:37:58.901"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:56.424" endtime="20211004 15:37:58.901"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:56.309" endtime="20211004 15:37:58.901"/>
+</kw>
+<kw name="Select Owner" library="Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_owner}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:58.903" level="INFO">Clicking element 'xpath://*[@id='firstStepForm']/div/div[1]/div[1]/div/label/span'.</msg>
+<status status="PASS" starttime="20211004 15:37:58.902" endtime="20211004 15:37:59.000"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:58.902" endtime="20211004 15:37:59.000"/>
+</kw>
+<kw name="Select Person Tradname" library="Keywords">
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:37:59.365" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-120.png"&gt;&lt;img src="selenium-screenshot-120.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:37:59.042" endtime="20211004 15:37:59.365"/>
+</kw>
+<msg timestamp="20211004 15:37:59.366" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:37:59.002" endtime="20211004 15:37:59.366"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:59.002" endtime="20211004 15:37:59.366"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:59.001" endtime="20211004 15:37:59.366"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>click element</arg>
+<arg>${sel_tradname_person}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_tradname_person}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:59.367" level="INFO">Clicking element 'xpath://*[@id='tradeNameType']/div[4]/div/label/span'.</msg>
+<status status="PASS" starttime="20211004 15:37:59.367" endtime="20211004 15:37:59.432"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:59.367" endtime="20211004 15:37:59.432"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:37:59.433" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:00.662" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-121.png"&gt;&lt;img src="selenium-screenshot-121.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:00.540" endtime="20211004 15:38:00.662"/>
+</kw>
+<msg timestamp="20211004 15:38:00.662" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 882)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:37:59.433" endtime="20211004 15:38:00.662"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:01.179" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:01.179" endtime="20211004 15:38:01.347"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:59.432" endtime="20211004 15:38:01.349"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:59.432" endtime="20211004 15:38:01.352"/>
+</kw>
+<status status="PASS" starttime="20211004 15:37:59.001" endtime="20211004 15:38:01.353"/>
+</kw>
+<kw name="select activity have licence" library="Keywords">
+<arg>${Activity_Name}</arg>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>5s</arg>
+<arg>click element</arg>
+<arg>xpath://*[@id="AddActivityForm"]/div[1]/div[1]/div/span/span[1]/span</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="AddActivityForm"]/div[1]/div[1]/div/span/span[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:01.361" level="INFO">Clicking element 'xpath://*[@id="AddActivityForm"]/div[1]/div[1]/div/span/span[1]/span'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:01.691" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-122.png"&gt;&lt;img src="selenium-screenshot-122.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:01.394" endtime="20211004 15:38:01.692"/>
+</kw>
+<msg timestamp="20211004 15:38:01.697" level="FAIL">Element with locator 'xpath://*[@id="AddActivityForm"]/div[1]/div[1]/div/span/span[1]/span' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:01.361" endtime="20211004 15:38:01.697"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="AddActivityForm"]/div[1]/div[1]/div/span/span[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:06.701" level="INFO">Clicking element 'xpath://*[@id="AddActivityForm"]/div[1]/div[1]/div/span/span[1]/span'.</msg>
+<status status="PASS" starttime="20211004 15:38:06.701" endtime="20211004 15:38:06.792"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:01.359" endtime="20211004 15:38:06.792"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>input text</arg>
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>${Activity_Name}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>${Activity_Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:06.793" level="INFO">Typing text 'الفنادق' into text field 'xpath:/html/body/span/span/span[1]/input'.</msg>
+<status status="PASS" starttime="20211004 15:38:06.793" endtime="20211004 15:38:06.883"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:06.793" endtime="20211004 15:38:06.883"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3</arg>
+<arg>500ms</arg>
+<arg>click element</arg>
+<arg>xpath://html/body/span/span/span[2]/ul/li[3]</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/span/span/span[2]/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:06.884" level="INFO">Clicking element 'xpath://html/body/span/span/span[2]/ul/li[3]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:07.025" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-123.png"&gt;&lt;img src="selenium-screenshot-123.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:06.892" endtime="20211004 15:38:07.025"/>
+</kw>
+<msg timestamp="20211004 15:38:07.025" level="FAIL">Element with locator 'xpath://html/body/span/span/span[2]/ul/li[3]' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:06.883" endtime="20211004 15:38:07.025"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/span/span/span[2]/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:07.538" level="INFO">Clicking element 'xpath://html/body/span/span/span[2]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20211004 15:38:07.538" endtime="20211004 15:38:07.575"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:06.883" endtime="20211004 15:38:07.575"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3</arg>
+<arg>2ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:07.805" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-124.png"&gt;&lt;img src="selenium-screenshot-124.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:07.590" endtime="20211004 15:38:07.805"/>
+</kw>
+<msg timestamp="20211004 15:38:07.806" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:07.576" endtime="20211004 15:38:07.806"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:07.576" endtime="20211004 15:38:07.806"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:07.576" endtime="20211004 15:38:07.807"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:07.575" endtime="20211004 15:38:07.807"/>
+</kw>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:08.014" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-125.png"&gt;&lt;img src="selenium-screenshot-125.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:07.828" endtime="20211004 15:38:08.014"/>
+</kw>
+<msg timestamp="20211004 15:38:08.015" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:07.807" endtime="20211004 15:38:08.015"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:07.807" endtime="20211004 15:38:08.015"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:07.807" endtime="20211004 15:38:08.015"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:08.016" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:09.265" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-126.png"&gt;&lt;img src="selenium-screenshot-126.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:09.108" endtime="20211004 15:38:09.265"/>
+</kw>
+<msg timestamp="20211004 15:38:09.265" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 752)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:08.015" endtime="20211004 15:38:09.265"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:09.777" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:09.777" endtime="20211004 15:38:09.880"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:08.015" endtime="20211004 15:38:09.880"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:08.015" endtime="20211004 15:38:09.880"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:01.357" endtime="20211004 15:38:09.880"/>
+</kw>
+<kw name="Assert page contains" library="Keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${Word}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211004 15:38:09.897" level="INFO">Current page contains text 'الفنادق'.</msg>
+<status status="PASS" starttime="20211004 15:38:09.884" endtime="20211004 15:38:09.897"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:09.883" endtime="20211004 15:38:09.897"/>
+</kw>
+<kw name="Select(Prefix_Suffix)" library="Keywords">
+<arg>${Prefix_index}</arg>
+<arg>${Suffix_index}</arg>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>select from list by index</arg>
+<arg>${sel_prefix}</arg>
+<arg>${Prefix_index}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sel_prefix}</arg>
+<arg>${Prefix_index}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211004 15:38:09.901" level="INFO">Selecting options from selection list 'id:SelectedPrefix' by index 1.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:10.096" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-127.png"&gt;&lt;img src="selenium-screenshot-127.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:09.914" endtime="20211004 15:38:10.096"/>
+</kw>
+<msg timestamp="20211004 15:38:10.097" level="FAIL">List with locator 'id:SelectedPrefix' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:09.899" endtime="20211004 15:38:10.097"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sel_prefix}</arg>
+<arg>${Prefix_index}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211004 15:38:10.313" level="INFO">Selecting options from selection list 'id:SelectedPrefix' by index 1.</msg>
+<status status="PASS" starttime="20211004 15:38:10.312" endtime="20211004 15:38:10.453"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:09.898" endtime="20211004 15:38:10.453"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>select from list by index</arg>
+<arg>${sel_sufix}</arg>
+<arg>${Suffix_index}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sel_sufix}</arg>
+<arg>${Suffix_index}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211004 15:38:10.459" level="INFO">Selecting options from selection list 'id:SelectedSuffix' by index 1.</msg>
+<status status="PASS" starttime="20211004 15:38:10.457" endtime="20211004 15:38:10.579"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:10.454" endtime="20211004 15:38:10.579"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:10.580" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:11.787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-128.png"&gt;&lt;img src="selenium-screenshot-128.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:11.666" endtime="20211004 15:38:11.787"/>
+</kw>
+<msg timestamp="20211004 15:38:11.787" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 765)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:10.580" endtime="20211004 15:38:11.787"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:12.298" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:13.522" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-129.png"&gt;&lt;img src="selenium-screenshot-129.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:13.400" endtime="20211004 15:38:13.522"/>
+</kw>
+<msg timestamp="20211004 15:38:13.522" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 874)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:12.298" endtime="20211004 15:38:13.522"/>
+</kw>
+<msg timestamp="20211004 15:38:13.522" level="FAIL">Keyword 'click button' failed after retrying for 2 seconds. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 874)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:10.579" endtime="20211004 15:38:13.522"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:38:10.579" endtime="20211004 15:38:13.522"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:13.732" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:13.732" endtime="20211004 15:38:13.844"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:13.732" endtime="20211004 15:38:13.845"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:13.732" endtime="20211004 15:38:13.846"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:10.579" endtime="20211004 15:38:13.846"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:09.898" endtime="20211004 15:38:13.847"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211004 15:38:13.856" endtime="20211004 15:38:14.167"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:13.856" endtime="20211004 15:38:14.167"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:13.854" endtime="20211004 15:38:14.168"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:13.851" endtime="20211004 15:38:14.168"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:14.173" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:15.374" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-130.png"&gt;&lt;img src="selenium-screenshot-130.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:15.236" endtime="20211004 15:38:15.374"/>
+</kw>
+<msg timestamp="20211004 15:38:15.374" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 960)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:14.172" endtime="20211004 15:38:15.374"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:15.876" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:15.876" endtime="20211004 15:38:15.908"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:14.171" endtime="20211004 15:38:15.908"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:14.170" endtime="20211004 15:38:15.908"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:14.169" endtime="20211004 15:38:15.908"/>
+</kw>
+<kw name="Enter data of Record" library="Keywords">
+<arg>${RecordDuration}</arg>
+<arg>${city}</arg>
+<arg>${capital}</arg>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by value</arg>
+<arg>${list_RecordDuration}</arg>
+<arg>${RecordDuration}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_RecordDuration}</arg>
+<arg>${RecordDuration}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211004 15:38:15.913" level="INFO">Selecting options from selection list 'id=RecordDuration' by value 1.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:16.150" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-131.png"&gt;&lt;img src="selenium-screenshot-131.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:15.928" endtime="20211004 15:38:16.150"/>
+</kw>
+<msg timestamp="20211004 15:38:16.151" level="FAIL">List with locator 'id=RecordDuration' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:15.912" endtime="20211004 15:38:16.151"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_RecordDuration}</arg>
+<arg>${RecordDuration}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211004 15:38:16.654" level="INFO">Selecting options from selection list 'id=RecordDuration' by value 1.</msg>
+<status status="PASS" starttime="20211004 15:38:16.654" endtime="20211004 15:38:16.707"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:15.912" endtime="20211004 15:38:16.708"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${sel_name_city}</arg>
+<arg>${city}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${sel_name_city}</arg>
+<arg>${city}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:16.709" level="INFO">Selecting options from selection list 'name:CitySelect' by label الرياض.</msg>
+<status status="PASS" starttime="20211004 15:38:16.708" endtime="20211004 15:38:16.777"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:16.708" endtime="20211004 15:38:16.777"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>input text</arg>
+<arg>${txt_capital}</arg>
+<arg>${capital}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_capital}</arg>
+<arg>${capital}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:16.778" level="INFO">Typing text '5000' into text field 'id=Capital'.</msg>
+<status status="PASS" starttime="20211004 15:38:16.778" endtime="20211004 15:38:16.872"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:16.777" endtime="20211004 15:38:16.872"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:15.911" endtime="20211004 15:38:16.872"/>
+</kw>
+<kw name="Enter data of year financial" library="Keywords">
+<arg>${caltype}</arg>
+<arg>${month}</arg>
+<arg>${day}</arg>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${cal_name}</arg>
+<arg>${caltype}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${cal_name}</arg>
+<arg>${caltype}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:16.874" level="INFO">Selecting options from selection list 'name:CalendarType' by label ميلادي.</msg>
+<status status="PASS" starttime="20211004 15:38:16.874" endtime="20211004 15:38:16.989"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:16.873" endtime="20211004 15:38:16.989"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${cal_month}</arg>
+<arg>${month}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${cal_month}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:16.990" level="INFO">Selecting options from selection list 'name:Month' by label يناير.</msg>
+<status status="PASS" starttime="20211004 15:38:16.990" endtime="20211004 15:38:17.082"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:16.989" endtime="20211004 15:38:17.082"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${cal_day}</arg>
+<arg>${day}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${cal_day}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:17.085" level="INFO">Selecting options from selection list 'name:Day' by label 12.</msg>
+<status status="PASS" starttime="20211004 15:38:17.084" endtime="20211004 15:38:17.198"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:17.083" endtime="20211004 15:38:17.199"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:17.421" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-132.png"&gt;&lt;img src="selenium-screenshot-132.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:17.239" endtime="20211004 15:38:17.422"/>
+</kw>
+<msg timestamp="20211004 15:38:17.422" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:17.207" endtime="20211004 15:38:17.422"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:17.206" endtime="20211004 15:38:17.422"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:17.203" endtime="20211004 15:38:17.422"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:17.201" endtime="20211004 15:38:17.422"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:17.423" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:18.616" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-133.png"&gt;&lt;img src="selenium-screenshot-133.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:18.498" endtime="20211004 15:38:18.616"/>
+</kw>
+<msg timestamp="20211004 15:38:18.616" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1031)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:17.423" endtime="20211004 15:38:18.616"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:19.130" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:19.130" endtime="20211004 15:38:19.198"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:17.423" endtime="20211004 15:38:19.198"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:17.422" endtime="20211004 15:38:19.199"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:16.873" endtime="20211004 15:38:19.199"/>
+</kw>
+<kw name="Enter data of Contact Info" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${AddressViewModel}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${AddressViewModel}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:19.421" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-134.png"&gt;&lt;img src="selenium-screenshot-134.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:19.220" endtime="20211004 15:38:19.421"/>
+</kw>
+<msg timestamp="20211004 15:38:19.422" level="FAIL">Element with locator 'name:AddressViewModel.UserProfileAddressId' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:19.201" endtime="20211004 15:38:19.423"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:19.201" endtime="20211004 15:38:19.423"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3</arg>
+<arg>200ms</arg>
+<arg>add new address</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Add New Address" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>click button</arg>
+<arg>${btn_add_new_address}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_add_new_address}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:19.424" level="INFO">Clicking button 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:19.696" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-135.png"&gt;&lt;img src="selenium-screenshot-135.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:19.440" endtime="20211004 15:38:19.696"/>
+</kw>
+<msg timestamp="20211004 15:38:19.697" level="FAIL">Button with locator 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:19.424" endtime="20211004 15:38:19.697"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_add_new_address}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:19.910" level="INFO">Clicking button 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:21.209" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-136.png"&gt;&lt;img src="selenium-screenshot-136.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:21.060" endtime="20211004 15:38:21.209"/>
+</kw>
+<msg timestamp="20211004 15:38:21.209" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (757, 845)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:19.908" endtime="20211004 15:38:21.209"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_add_new_address}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:21.429" level="INFO">Clicking button 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20211004 15:38:21.429" endtime="20211004 15:38:21.463"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:19.424" endtime="20211004 15:38:21.463"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>select from list by label</arg>
+<arg>id=AddNewRegionId</arg>
+<arg>الرياض</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewRegionId</arg>
+<arg>الرياض</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:21.463" level="INFO">Selecting options from selection list 'id=AddNewRegionId' by label الرياض.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:21.771" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-137.png"&gt;&lt;img src="selenium-screenshot-137.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:21.543" endtime="20211004 15:38:21.772"/>
+</kw>
+<msg timestamp="20211004 15:38:21.774" level="FAIL">ElementNotInteractableException: Message: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:21.463" endtime="20211004 15:38:21.774"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewRegionId</arg>
+<arg>الرياض</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:23.781" level="INFO">Selecting options from selection list 'id=AddNewRegionId' by label الرياض.</msg>
+<status status="PASS" starttime="20211004 15:38:23.781" endtime="20211004 15:38:23.862"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:21.463" endtime="20211004 15:38:23.862"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>select from list by label</arg>
+<arg>id=AddNewCityId</arg>
+<arg>الرياض</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewCityId</arg>
+<arg>الرياض</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:23.862" level="INFO">Selecting options from selection list 'id=AddNewCityId' by label الرياض.</msg>
+<status status="PASS" starttime="20211004 15:38:23.862" endtime="20211004 15:38:23.960"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:23.862" endtime="20211004 15:38:23.961"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>select from list by label</arg>
+<arg>id=AddNewDistrictId</arg>
+<arg>اشبيلية</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewDistrictId</arg>
+<arg>اشبيلية</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:23.963" level="INFO">Selecting options from selection list 'id=AddNewDistrictId' by label اشبيلية.</msg>
+<status status="PASS" starttime="20211004 15:38:23.962" endtime="20211004 15:38:24.071"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:23.961" endtime="20211004 15:38:24.071"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=AddNewBuildingNumber</arg>
+<arg>1111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:24.072" level="INFO">Typing text '1111' into text field 'id=AddNewBuildingNumber'.</msg>
+<status status="PASS" starttime="20211004 15:38:24.072" endtime="20211004 15:38:24.155"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>click element</arg>
+<arg>xpath://*[@id="addNewAddressSection"]/div[5]/button</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="addNewAddressSection"]/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:24.155" level="INFO">Clicking element 'xpath://*[@id="addNewAddressSection"]/div[5]/button'.</msg>
+<status status="PASS" starttime="20211004 15:38:24.155" endtime="20211004 15:38:24.217"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:24.155" endtime="20211004 15:38:24.217"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>click element</arg>
+<arg>xpath://*[@id="addressList"]/div[2]/label/div/div[1]</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="addressList"]/div[2]/label/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:24.219" level="INFO">Clicking element 'xpath://*[@id="addressList"]/div[2]/label/div/div[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:24.435" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-138.png"&gt;&lt;img src="selenium-screenshot-138.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:24.242" endtime="20211004 15:38:24.435"/>
+</kw>
+<msg timestamp="20211004 15:38:24.451" level="FAIL">Element with locator 'xpath://*[@id="addressList"]/div[2]/label/div/div[1]' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:24.218" endtime="20211004 15:38:24.451"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="addressList"]/div[2]/label/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:26.456" level="INFO">Clicking element 'xpath://*[@id="addressList"]/div[2]/label/div/div[1]'.</msg>
+<status status="PASS" starttime="20211004 15:38:26.456" endtime="20211004 15:38:26.510"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:24.217" endtime="20211004 15:38:26.510"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=AddNewUnitNumber</arg>
+<arg>8</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:26.510" level="INFO">Typing text '8' into text field 'id=AddNewUnitNumber'.</msg>
+<status status="PASS" starttime="20211004 15:38:26.510" endtime="20211004 15:38:26.575"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=AddNewFloorNumber</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:26.576" level="INFO">Typing text '1' into text field 'id=AddNewFloorNumber'.</msg>
+<status status="PASS" starttime="20211004 15:38:26.575" endtime="20211004 15:38:26.658"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewBuildingTypeId</arg>
+<arg>فيلا</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:26.659" level="INFO">Selecting options from selection list 'id=AddNewBuildingTypeId' by label فيلا.</msg>
+<status status="PASS" starttime="20211004 15:38:26.659" endtime="20211004 15:38:26.764"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:38:28.777" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211004 15:38:26.764" endtime="20211004 15:38:28.777"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=saveNewAddress</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:28.777" level="INFO">Clicking button 'name=saveNewAddress'.</msg>
+<status status="PASS" starttime="20211004 15:38:28.777" endtime="20211004 15:38:28.855"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:19.423" endtime="20211004 15:38:28.856"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:19.423" endtime="20211004 15:38:28.856"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>generate mobile</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Generate Mobile" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Mobile_Random}</var>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:38:28.857" level="INFO">${Mobile_Random} = 33414045</msg>
+<status status="PASS" starttime="20211004 15:38:28.857" endtime="20211004 15:38:28.857"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_MobileNumber}</arg>
+<arg>05${Mobile_Random}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:28.858" level="INFO">Typing text '0533414045' into text field 'id:MobileNumber'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:29.133" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-139.png"&gt;&lt;img src="selenium-screenshot-139.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:28.915" endtime="20211004 15:38:29.134"/>
+</kw>
+<msg timestamp="20211004 15:38:29.134" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:28.857" endtime="20211004 15:38:29.134"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:38:28.856" endtime="20211004 15:38:29.135"/>
+</kw>
+<kw name="Generate Mobile" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Mobile_Random}</var>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:38:29.340" level="INFO">${Mobile_Random} = 07564673</msg>
+<status status="PASS" starttime="20211004 15:38:29.339" endtime="20211004 15:38:29.340"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_MobileNumber}</arg>
+<arg>05${Mobile_Random}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:29.341" level="INFO">Typing text '0507564673' into text field 'id:MobileNumber'.</msg>
+<status status="PASS" starttime="20211004 15:38:29.340" endtime="20211004 15:38:29.458"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:29.337" endtime="20211004 15:38:29.458"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:28.856" endtime="20211004 15:38:29.458"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:38:31.471" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211004 15:38:29.458" endtime="20211004 15:38:31.471"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>generate email</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Generate Email" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Email_Random}</var>
+<arg>10</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:38:31.471" level="INFO">${Email_Random} = SILAYAcrNq</msg>
+<status status="PASS" starttime="20211004 15:38:31.471" endtime="20211004 15:38:31.471"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${Email_Random}@test.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:31.471" level="INFO">Typing text 'SILAYAcrNq@test.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20211004 15:38:31.471" endtime="20211004 15:38:31.584"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.471" endtime="20211004 15:38:31.584"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.471" endtime="20211004 15:38:31.584"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>generate phone</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Generate Phone" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Phone_Random}</var>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:38:31.585" level="INFO">${Phone_Random} = 15881224</msg>
+<status status="PASS" starttime="20211004 15:38:31.585" endtime="20211004 15:38:31.585"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phonenumber}</arg>
+<arg>01${Phone_Random}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:31.586" level="INFO">Typing text '0115881224' into text field 'id:PhoneNumber'.</msg>
+<status status="PASS" starttime="20211004 15:38:31.585" endtime="20211004 15:38:31.703"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.585" endtime="20211004 15:38:31.703"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.585" endtime="20211004 15:38:31.703"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:31.872" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-140.png"&gt;&lt;img src="selenium-screenshot-140.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:31.718" endtime="20211004 15:38:31.873"/>
+</kw>
+<msg timestamp="20211004 15:38:31.873" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:31.704" endtime="20211004 15:38:31.873"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.704" endtime="20211004 15:38:31.873"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.704" endtime="20211004 15:38:31.873"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.703" endtime="20211004 15:38:31.873"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:31.874" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:33.131" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-141.png"&gt;&lt;img src="selenium-screenshot-141.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:32.974" endtime="20211004 15:38:33.131"/>
+</kw>
+<msg timestamp="20211004 15:38:33.131" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 801)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:31.874" endtime="20211004 15:38:33.131"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:33.638" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:33.638" endtime="20211004 15:38:33.693"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.874" endtime="20211004 15:38:33.694"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:31.873" endtime="20211004 15:38:33.694"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:19.200" endtime="20211004 15:38:33.694"/>
+</kw>
+<kw name="Add exist person as manager" library="Keywords">
+<arg>${ExistManager_name}</arg>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${manager}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${manager}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:33.907" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-142.png"&gt;&lt;img src="selenium-screenshot-142.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:33.712" endtime="20211004 15:38:33.907"/>
+</kw>
+<msg timestamp="20211004 15:38:33.909" level="FAIL">Element with locator 'name:ManagerId' not found.</msg>
+<status status="FAIL" starttime="20211004 15:38:33.695" endtime="20211004 15:38:33.909"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:33.695" endtime="20211004 15:38:33.910"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>select from list by label</arg>
+<arg>${manager}</arg>
+<arg>${manager_name}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${manager}</arg>
+<arg>${manager_name}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:38:33.911" level="INFO">Selecting options from selection list 'name:ManagerId' by label خديجة سلطان محمد الرصيص.</msg>
+<status status="PASS" starttime="20211004 15:38:33.910" endtime="20211004 15:38:34.067"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:33.910" endtime="20211004 15:38:34.068"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:33.695" endtime="20211004 15:38:34.068"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:34.268" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-143.png"&gt;&lt;img src="selenium-screenshot-143.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:34.087" endtime="20211004 15:38:34.268"/>
+</kw>
+<msg timestamp="20211004 15:38:34.269" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:34.070" endtime="20211004 15:38:34.269"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:34.069" endtime="20211004 15:38:34.269"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:34.069" endtime="20211004 15:38:34.270"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:34.068" endtime="20211004 15:38:34.270"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:34.276" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:35.480" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-144.png"&gt;&lt;img src="selenium-screenshot-144.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:35.327" endtime="20211004 15:38:35.480"/>
+</kw>
+<msg timestamp="20211004 15:38:35.480" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1333)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:34.275" endtime="20211004 15:38:35.480"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:35.981" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:35.981" endtime="20211004 15:38:36.039"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:34.271" endtime="20211004 15:38:36.039"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:34.271" endtime="20211004 15:38:36.039"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:34.271" endtime="20211004 15:38:36.039"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211004 15:38:36.050" endtime="20211004 15:38:36.342"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:36.048" endtime="20211004 15:38:36.343"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:36.046" endtime="20211004 15:38:36.343"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:36.043" endtime="20211004 15:38:36.343"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:36.347" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:37.570" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-145.png"&gt;&lt;img src="selenium-screenshot-145.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:37.417" endtime="20211004 15:38:37.570"/>
+</kw>
+<msg timestamp="20211004 15:38:37.570" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" id="btnSubmitForm" style="" class="btn btn-stepper-nav float-right"&gt;...&lt;/button&gt; is not clickable at point (57, 547). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:36.346" endtime="20211004 15:38:37.570"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:38.072" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:39.258" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-146.png"&gt;&lt;img src="selenium-screenshot-146.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:39.136" endtime="20211004 15:38:39.258"/>
+</kw>
+<msg timestamp="20211004 15:38:39.258" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1562)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:38.072" endtime="20211004 15:38:39.258"/>
+</kw>
+<msg timestamp="20211004 15:38:39.258" level="FAIL">Keyword 'click button' failed after retrying for 2 seconds. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1562)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:36.345" endtime="20211004 15:38:39.258"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:38:36.345" endtime="20211004 15:38:39.258"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:39.475" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:39.475" endtime="20211004 15:38:39.511"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:39.475" endtime="20211004 15:38:39.511"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:39.475" endtime="20211004 15:38:39.511"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:36.344" endtime="20211004 15:38:39.511"/>
+</kw>
+<kw name="Skip License" library="Keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(5000,5000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211004 15:38:39.514" level="INFO">Executing JavaScript:
+window.scrollTo(5000,5000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20211004 15:38:39.511" endtime="20211004 15:38:39.519"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:38:42.530" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211004 15:38:39.519" endtime="20211004 15:38:42.530"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_skiplic}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:47.796" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-147.png"&gt;&lt;img src="selenium-screenshot-147.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:47.662" endtime="20211004 15:38:47.796"/>
+</kw>
+<msg timestamp="20211004 15:38:47.796" level="FAIL">Element 'xpath://*[@id='root']/div[1]/main/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/div/div/button[1]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20211004 15:38:42.530" endtime="20211004 15:38:47.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 15:38:47.796" endtime="20211004 15:38:47.796"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_skiplic}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211004 15:38:47.796" endtime="20211004 15:38:47.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 15:38:47.796" endtime="20211004 15:38:47.796"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>3s</arg>
+<arg>click button</arg>
+<arg>${btn_skipyes}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20211004 15:38:47.796" endtime="20211004 15:38:47.796"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:38:39.511" endtime="20211004 15:38:47.796"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:37:51.567" endtime="20211004 15:38:47.796">Element 'xpath://*[@id='root']/div[1]/main/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/div/div/button[1]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20211004 15:37:51.551" endtime="20211004 15:38:47.796"/>
+</suite>
+<suite id="s1-s1-s3" name="Estdel" source="C:\Users\Abdelrahman\Desktop\Doc\Hagar\LastAutomation\APi\Nic.AutomationEstablishment\new\TestCases\estdel.robot">
+<test id="s1-s1-s3-t1" name="Create Establishment Request As Delegated">
+<kw name="login" library="Keywords">
+<arg>${id}</arg>
+<arg>${pwd}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211004 15:38:47.796" level="INFO">Opening browser 'chrome' to base url 'https://sbc.sbcsdaia.com/'.</msg>
+<status status="PASS" starttime="20211004 15:38:47.796" endtime="20211004 15:38:50.093"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211004 15:38:50.093" endtime="20211004 15:38:50.235"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_NationalityID}</arg>
+<arg>${NationalID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:50.241" level="INFO">Typing text '1068486370' into text field 'id:Input_NationalID'.</msg>
+<status status="PASS" starttime="20211004 15:38:50.238" endtime="20211004 15:38:50.471"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Pwd}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:50.471" level="INFO">Typing text 'Password123!' into text field 'id:Input_Password'.</msg>
+<status status="PASS" starttime="20211004 15:38:50.471" endtime="20211004 15:38:50.561"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:50.561" level="INFO">Clicking element 'xpath://button[contains(text(),'تسجيل الدخول')]'.</msg>
+<status status="PASS" starttime="20211004 15:38:50.561" endtime="20211004 15:38:52.251"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:47.796" endtime="20211004 15:38:52.252"/>
+</kw>
+<kw name="Create Establishment" library="Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_start}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:52.256" level="INFO">Clicking element 'xpath://a[@class='link-nav mx-auto wobble-vertical']'.</msg>
+<status status="PASS" starttime="20211004 15:38:52.255" endtime="20211004 15:38:52.352"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>click element</arg>
+<arg>${btn_est}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_est}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:52.357" level="INFO">Clicking element 'xpath://div[@class='homepage withp']//div[1]//a[1]//div[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:53.593" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-148.png"&gt;&lt;img src="selenium-screenshot-148.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:53.455" endtime="20211004 15:38:53.593"/>
+</kw>
+<msg timestamp="20211004 15:38:53.593" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1104, 1309)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:52.355" endtime="20211004 15:38:53.593"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_est}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:53.794" level="INFO">Clicking element 'xpath://div[@class='homepage withp']//div[1]//a[1]//div[1]'.</msg>
+<status status="PASS" starttime="20211004 15:38:53.794" endtime="20211004 15:38:54.680"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:52.353" endtime="20211004 15:38:54.680"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:52.254" endtime="20211004 15:38:54.681"/>
+</kw>
+<kw name="Select Delegated" library="Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_delegated}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:54.683" level="INFO">Clicking element 'xpath://*[@id='firstStepForm']/div/div[1]/div[2]/div/label/span'.</msg>
+<status status="PASS" starttime="20211004 15:38:54.682" endtime="20211004 15:38:54.814"/>
+</kw>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:55.220" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-149.png"&gt;&lt;img src="selenium-screenshot-149.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:54.923" endtime="20211004 15:38:55.220"/>
+</kw>
+<msg timestamp="20211004 15:38:55.223" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:54.814" endtime="20211004 15:38:55.223"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:54.814" endtime="20211004 15:38:55.223"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:54.814" endtime="20211004 15:38:55.223"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:38:58.237" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211004 15:38:55.223" endtime="20211004 15:38:58.237"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_delegator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:58.237" level="INFO">Clicking element 'xpath://*[@id='1000141745']/div'.</msg>
+<status status="PASS" starttime="20211004 15:38:58.237" endtime="20211004 15:38:58.293"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:54.682" endtime="20211004 15:38:58.293"/>
+</kw>
+<kw name="Select Person Tradname" library="Keywords">
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:38:58.717" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-150.png"&gt;&lt;img src="selenium-screenshot-150.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:38:58.356" endtime="20211004 15:38:58.718"/>
+</kw>
+<msg timestamp="20211004 15:38:58.721" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:38:58.304" endtime="20211004 15:38:58.721"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:58.301" endtime="20211004 15:38:58.721"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:58.297" endtime="20211004 15:38:58.721"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>click element</arg>
+<arg>${sel_tradname_person}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_tradname_person}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:58.722" level="INFO">Clicking element 'xpath://*[@id='tradeNameType']/div[4]/div/label/span'.</msg>
+<status status="PASS" starttime="20211004 15:38:58.722" endtime="20211004 15:38:58.813"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:58.721" endtime="20211004 15:38:58.813"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:38:58.816" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:38:58.814" endtime="20211004 15:38:58.918"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:58.814" endtime="20211004 15:38:58.918"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:58.814" endtime="20211004 15:38:58.918"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:58.294" endtime="20211004 15:38:58.919"/>
+</kw>
+<kw name="Select Multiple Activities" library="Keywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:03.938" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211004 15:38:58.921" endtime="20211004 15:39:03.938"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${sel_main_act}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${sel_main_act}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:04.131" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-151.png"&gt;&lt;img src="selenium-screenshot-151.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:03.954" endtime="20211004 15:39:04.131"/>
+</kw>
+<msg timestamp="20211004 15:39:04.132" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:03.938" endtime="20211004 15:39:04.132"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:03.938" endtime="20211004 15:39:04.132"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:07.145" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211004 15:39:04.132" endtime="20211004 15:39:07.145"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_main_act}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:07.145" level="INFO">Clicking element 'id=S'.</msg>
+<status status="PASS" starttime="20211004 15:39:07.145" endtime="20211004 15:39:07.179"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:10.184" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211004 15:39:07.180" endtime="20211004 15:39:10.184"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_sub_act}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:10.184" level="INFO">Clicking element 'id=9511'.</msg>
+<status status="PASS" starttime="20211004 15:39:10.184" endtime="20211004 15:39:10.250"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:13.260" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211004 15:39:10.250" endtime="20211004 15:39:13.260"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_act1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:13.260" level="INFO">Clicking element 'id=parent-951110'.</msg>
+<status status="PASS" starttime="20211004 15:39:13.260" endtime="20211004 15:39:13.297"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_act2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:13.297" level="INFO">Clicking element 'id=parent-951130'.</msg>
+<status status="PASS" starttime="20211004 15:39:13.297" endtime="20211004 15:39:13.340"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_act3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:13.340" level="INFO">Clicking element 'id=parent-951120'.</msg>
+<status status="PASS" starttime="20211004 15:39:13.340" endtime="20211004 15:39:13.390"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sel_act4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:13.393" level="INFO">Clicking element 'id=parent-951140'.</msg>
+<status status="PASS" starttime="20211004 15:39:13.392" endtime="20211004 15:39:13.449"/>
+</kw>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:13.653" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-152.png"&gt;&lt;img src="selenium-screenshot-152.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:13.464" endtime="20211004 15:39:13.653"/>
+</kw>
+<msg timestamp="20211004 15:39:13.654" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:13.449" endtime="20211004 15:39:13.654"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:13.449" endtime="20211004 15:39:13.654"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:13.449" endtime="20211004 15:39:13.654"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:13.655" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:14.880" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-153.png"&gt;&lt;img src="selenium-screenshot-153.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:14.743" endtime="20211004 15:39:14.880"/>
+</kw>
+<msg timestamp="20211004 15:39:14.880" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 846)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:13.655" endtime="20211004 15:39:14.880"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:15.381" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:39:15.381" endtime="20211004 15:39:15.425"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:13.654" endtime="20211004 15:39:15.425"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:13.654" endtime="20211004 15:39:15.425"/>
+</kw>
+<status status="PASS" starttime="20211004 15:38:58.919" endtime="20211004 15:39:15.425"/>
+</kw>
+<kw name="Assert page contains" library="Keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${Word}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211004 15:39:15.450" level="INFO">Current page contains text 'إصلاح وصيانة الأجهزة الإلكترونية المتعلقة بالحواسيب الأخرى غير المذكورة سابقاً'.</msg>
+<status status="PASS" starttime="20211004 15:39:15.429" endtime="20211004 15:39:15.450"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:15.426" endtime="20211004 15:39:15.450"/>
+</kw>
+<kw name="Select(Prefix_Suffix)" library="Keywords">
+<arg>${Prefix_index}</arg>
+<arg>${Suffix_index}</arg>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>select from list by index</arg>
+<arg>${sel_prefix}</arg>
+<arg>${Prefix_index}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sel_prefix}</arg>
+<arg>${Prefix_index}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211004 15:39:15.451" level="INFO">Selecting options from selection list 'id:SelectedPrefix' by index 2.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:15.671" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-154.png"&gt;&lt;img src="selenium-screenshot-154.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:15.481" endtime="20211004 15:39:15.671"/>
+</kw>
+<msg timestamp="20211004 15:39:15.672" level="FAIL">List with locator 'id:SelectedPrefix' not found.</msg>
+<status status="FAIL" starttime="20211004 15:39:15.451" endtime="20211004 15:39:15.672"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sel_prefix}</arg>
+<arg>${Prefix_index}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211004 15:39:15.884" level="INFO">Selecting options from selection list 'id:SelectedPrefix' by index 2.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:16.089" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-155.png"&gt;&lt;img src="selenium-screenshot-155.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:15.905" endtime="20211004 15:39:16.089"/>
+</kw>
+<msg timestamp="20211004 15:39:16.089" level="FAIL">List with locator 'id:SelectedPrefix' not found.</msg>
+<status status="FAIL" starttime="20211004 15:39:15.882" endtime="20211004 15:39:16.089"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sel_prefix}</arg>
+<arg>${Prefix_index}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211004 15:39:16.292" level="INFO">Selecting options from selection list 'id:SelectedPrefix' by index 2.</msg>
+<status status="PASS" starttime="20211004 15:39:16.292" endtime="20211004 15:39:16.380"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:15.451" endtime="20211004 15:39:16.380"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>select from list by index</arg>
+<arg>${sel_sufix}</arg>
+<arg>${Suffix_index}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sel_sufix}</arg>
+<arg>${Suffix_index}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211004 15:39:16.380" level="INFO">Selecting options from selection list 'id:SelectedSuffix' by index 1.</msg>
+<status status="PASS" starttime="20211004 15:39:16.380" endtime="20211004 15:39:16.467"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:16.380" endtime="20211004 15:39:16.467"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:16.468" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:17.673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-156.png"&gt;&lt;img src="selenium-screenshot-156.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:17.504" endtime="20211004 15:39:17.673"/>
+</kw>
+<msg timestamp="20211004 15:39:17.673" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 827)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:16.468" endtime="20211004 15:39:17.673"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:18.175" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:19.346" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-157.png"&gt;&lt;img src="selenium-screenshot-157.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:19.223" endtime="20211004 15:39:19.346"/>
+</kw>
+<msg timestamp="20211004 15:39:19.346" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 936)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:18.175" endtime="20211004 15:39:19.346"/>
+</kw>
+<msg timestamp="20211004 15:39:19.346" level="FAIL">Keyword 'click button' failed after retrying for 2 seconds. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 936)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:16.467" endtime="20211004 15:39:19.346"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:39:16.467" endtime="20211004 15:39:19.346"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:19.555" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:39:19.555" endtime="20211004 15:39:19.668"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:19.555" endtime="20211004 15:39:19.668"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:19.555" endtime="20211004 15:39:19.668"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:16.467" endtime="20211004 15:39:19.669"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:15.451" endtime="20211004 15:39:19.669"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211004 15:39:19.681" endtime="20211004 15:39:19.983"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:19.680" endtime="20211004 15:39:19.983"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:19.679" endtime="20211004 15:39:19.983"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:19.676" endtime="20211004 15:39:19.983"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:19.986" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:21.197" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-158.png"&gt;&lt;img src="selenium-screenshot-158.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:21.080" endtime="20211004 15:39:21.197"/>
+</kw>
+<msg timestamp="20211004 15:39:21.197" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1028)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:19.985" endtime="20211004 15:39:21.197"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:21.697" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:22.884" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-159.png"&gt;&lt;img src="selenium-screenshot-159.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:22.762" endtime="20211004 15:39:22.884"/>
+</kw>
+<msg timestamp="20211004 15:39:22.884" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1041)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:21.697" endtime="20211004 15:39:22.884"/>
+</kw>
+<msg timestamp="20211004 15:39:22.884" level="FAIL">Keyword 'click button' failed after retrying for 2 seconds. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1041)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:19.985" endtime="20211004 15:39:22.884"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:39:19.984" endtime="20211004 15:39:22.884"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:23.085" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:39:23.085" endtime="20211004 15:39:23.151"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:23.085" endtime="20211004 15:39:23.151"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:23.085" endtime="20211004 15:39:23.151"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:19.984" endtime="20211004 15:39:23.151"/>
+</kw>
+<kw name="Enter data of Record" library="Keywords">
+<arg>${RecordDuration}</arg>
+<arg>${city}</arg>
+<arg>${capital}</arg>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by value</arg>
+<arg>${list_RecordDuration}</arg>
+<arg>${RecordDuration}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_RecordDuration}</arg>
+<arg>${RecordDuration}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211004 15:39:23.155" level="INFO">Selecting options from selection list 'id=RecordDuration' by value 1.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:23.372" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-160.png"&gt;&lt;img src="selenium-screenshot-160.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:23.171" endtime="20211004 15:39:23.372"/>
+</kw>
+<msg timestamp="20211004 15:39:23.373" level="FAIL">List with locator 'id=RecordDuration' not found.</msg>
+<status status="FAIL" starttime="20211004 15:39:23.155" endtime="20211004 15:39:23.373"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_RecordDuration}</arg>
+<arg>${RecordDuration}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211004 15:39:23.886" level="INFO">Selecting options from selection list 'id=RecordDuration' by value 1.</msg>
+<status status="PASS" starttime="20211004 15:39:23.885" endtime="20211004 15:39:23.996"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:23.155" endtime="20211004 15:39:23.996"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${sel_name_city}</arg>
+<arg>${city}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${sel_name_city}</arg>
+<arg>${city}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:23.999" level="INFO">Selecting options from selection list 'name:CitySelect' by label الرياض.</msg>
+<status status="PASS" starttime="20211004 15:39:23.998" endtime="20211004 15:39:24.094"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:23.997" endtime="20211004 15:39:24.094"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>input text</arg>
+<arg>${txt_capital}</arg>
+<arg>${capital}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_capital}</arg>
+<arg>${capital}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:24.098" level="INFO">Typing text '5000' into text field 'id=Capital'.</msg>
+<status status="PASS" starttime="20211004 15:39:24.097" endtime="20211004 15:39:24.207"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.095" endtime="20211004 15:39:24.207"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:23.154" endtime="20211004 15:39:24.207"/>
+</kw>
+<kw name="Enter data of year financial" library="Keywords">
+<arg>${caltype}</arg>
+<arg>${month}</arg>
+<arg>${day}</arg>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${cal_name}</arg>
+<arg>${caltype}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${cal_name}</arg>
+<arg>${caltype}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:24.209" level="INFO">Selecting options from selection list 'name:CalendarType' by label ميلادي.</msg>
+<status status="PASS" starttime="20211004 15:39:24.209" endtime="20211004 15:39:24.272"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.208" endtime="20211004 15:39:24.272"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${cal_month}</arg>
+<arg>${month}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${cal_month}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:24.275" level="INFO">Selecting options from selection list 'name:Month' by label يناير.</msg>
+<status status="PASS" starttime="20211004 15:39:24.274" endtime="20211004 15:39:24.394"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.272" endtime="20211004 15:39:24.394"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>select from list by label</arg>
+<arg>${cal_day}</arg>
+<arg>${day}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${cal_day}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:24.395" level="INFO">Selecting options from selection list 'name:Day' by label 12.</msg>
+<status status="PASS" starttime="20211004 15:39:24.395" endtime="20211004 15:39:24.516"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.394" endtime="20211004 15:39:24.517"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:24.741" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-161.png"&gt;&lt;img src="selenium-screenshot-161.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:24.555" endtime="20211004 15:39:24.741"/>
+</kw>
+<msg timestamp="20211004 15:39:24.742" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:24.524" endtime="20211004 15:39:24.743"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.523" endtime="20211004 15:39:24.743"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.521" endtime="20211004 15:39:24.743"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.519" endtime="20211004 15:39:24.743"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:24.746" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:25.942" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-162.png"&gt;&lt;img src="selenium-screenshot-162.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:25.811" endtime="20211004 15:39:25.942"/>
+</kw>
+<msg timestamp="20211004 15:39:25.942" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1017)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:24.745" endtime="20211004 15:39:25.942"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:26.444" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:39:26.444" endtime="20211004 15:39:26.509"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.745" endtime="20211004 15:39:26.510"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.743" endtime="20211004 15:39:26.512"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:24.208" endtime="20211004 15:39:26.512"/>
+</kw>
+<kw name="Enter data of Contact Info" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${AddressViewModel}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${AddressViewModel}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:26.743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-163.png"&gt;&lt;img src="selenium-screenshot-163.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:26.539" endtime="20211004 15:39:26.743"/>
+</kw>
+<msg timestamp="20211004 15:39:26.743" level="FAIL">Element with locator 'name:AddressViewModel.UserProfileAddressId' not found.</msg>
+<status status="FAIL" starttime="20211004 15:39:26.514" endtime="20211004 15:39:26.743"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:26.514" endtime="20211004 15:39:26.743"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3</arg>
+<arg>200ms</arg>
+<arg>add new address</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Add New Address" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>click button</arg>
+<arg>${btn_add_new_address}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_add_new_address}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:26.749" level="INFO">Clicking button 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:27.057" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-164.png"&gt;&lt;img src="selenium-screenshot-164.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:26.763" endtime="20211004 15:39:27.057"/>
+</kw>
+<msg timestamp="20211004 15:39:27.058" level="FAIL">Button with locator 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button' not found.</msg>
+<status status="FAIL" starttime="20211004 15:39:26.749" endtime="20211004 15:39:27.058"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_add_new_address}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:27.272" level="INFO">Clicking button 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:28.517" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-165.png"&gt;&lt;img src="selenium-screenshot-165.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:28.364" endtime="20211004 15:39:28.517"/>
+</kw>
+<msg timestamp="20211004 15:39:28.517" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (757, 871)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:27.271" endtime="20211004 15:39:28.517"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_add_new_address}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:28.717" level="INFO">Clicking button 'xpath://*[@id='contactInfo']/div/div[1]/div[1]/div/div/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20211004 15:39:28.717" endtime="20211004 15:39:28.780"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:26.743" endtime="20211004 15:39:28.780"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>select from list by label</arg>
+<arg>id=AddNewRegionId</arg>
+<arg>الرياض</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewRegionId</arg>
+<arg>الرياض</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:28.785" level="INFO">Selecting options from selection list 'id=AddNewRegionId' by label الرياض.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:29.114" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-166.png"&gt;&lt;img src="selenium-screenshot-166.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:28.885" endtime="20211004 15:39:29.115"/>
+</kw>
+<msg timestamp="20211004 15:39:29.118" level="FAIL">ElementNotInteractableException: Message: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:28.784" endtime="20211004 15:39:29.118"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewRegionId</arg>
+<arg>الرياض</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:31.124" level="INFO">Selecting options from selection list 'id=AddNewRegionId' by label الرياض.</msg>
+<status status="PASS" starttime="20211004 15:39:31.124" endtime="20211004 15:39:31.167"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:28.781" endtime="20211004 15:39:31.167"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>select from list by label</arg>
+<arg>id=AddNewCityId</arg>
+<arg>الرياض</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewCityId</arg>
+<arg>الرياض</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:31.168" level="INFO">Selecting options from selection list 'id=AddNewCityId' by label الرياض.</msg>
+<status status="PASS" starttime="20211004 15:39:31.168" endtime="20211004 15:39:31.262"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:31.167" endtime="20211004 15:39:31.262"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>select from list by label</arg>
+<arg>id=AddNewDistrictId</arg>
+<arg>اشبيلية</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewDistrictId</arg>
+<arg>اشبيلية</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:31.263" level="INFO">Selecting options from selection list 'id=AddNewDistrictId' by label اشبيلية.</msg>
+<status status="PASS" starttime="20211004 15:39:31.262" endtime="20211004 15:39:31.361"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:31.262" endtime="20211004 15:39:31.361"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=AddNewBuildingNumber</arg>
+<arg>1111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:31.361" level="INFO">Typing text '1111' into text field 'id=AddNewBuildingNumber'.</msg>
+<status status="PASS" starttime="20211004 15:39:31.361" endtime="20211004 15:39:31.460"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>click element</arg>
+<arg>xpath://*[@id="addNewAddressSection"]/div[5]/button</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="addNewAddressSection"]/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:31.462" level="INFO">Clicking element 'xpath://*[@id="addNewAddressSection"]/div[5]/button'.</msg>
+<status status="PASS" starttime="20211004 15:39:31.462" endtime="20211004 15:39:31.541"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:31.461" endtime="20211004 15:39:31.541"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>2s</arg>
+<arg>click element</arg>
+<arg>xpath://*[@id="addressList"]/div[2]/label/div/div[1]</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="addressList"]/div[2]/label/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:31.543" level="INFO">Clicking element 'xpath://*[@id="addressList"]/div[2]/label/div/div[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:31.752" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-167.png"&gt;&lt;img src="selenium-screenshot-167.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:31.565" endtime="20211004 15:39:31.752"/>
+</kw>
+<msg timestamp="20211004 15:39:31.752" level="FAIL">Element with locator 'xpath://*[@id="addressList"]/div[2]/label/div/div[1]' not found.</msg>
+<status status="FAIL" starttime="20211004 15:39:31.543" endtime="20211004 15:39:31.752"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="addressList"]/div[2]/label/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:33.761" level="INFO">Clicking element 'xpath://*[@id="addressList"]/div[2]/label/div/div[1]'.</msg>
+<status status="PASS" starttime="20211004 15:39:33.761" endtime="20211004 15:39:33.859"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:31.542" endtime="20211004 15:39:33.859"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=AddNewUnitNumber</arg>
+<arg>8</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:33.859" level="INFO">Typing text '8' into text field 'id=AddNewUnitNumber'.</msg>
+<status status="PASS" starttime="20211004 15:39:33.859" endtime="20211004 15:39:33.959"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=AddNewFloorNumber</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:33.959" level="INFO">Typing text '1' into text field 'id=AddNewFloorNumber'.</msg>
+<status status="PASS" starttime="20211004 15:39:33.959" endtime="20211004 15:39:34.055"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=AddNewBuildingTypeId</arg>
+<arg>فيلا</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:34.056" level="INFO">Selecting options from selection list 'id=AddNewBuildingTypeId' by label فيلا.</msg>
+<status status="PASS" starttime="20211004 15:39:34.055" endtime="20211004 15:39:34.123"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:36.136" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211004 15:39:34.123" endtime="20211004 15:39:36.137"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=saveNewAddress</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:36.138" level="INFO">Clicking button 'name=saveNewAddress'.</msg>
+<status status="PASS" starttime="20211004 15:39:36.137" endtime="20211004 15:39:36.203"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:26.743" endtime="20211004 15:39:36.203"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:26.743" endtime="20211004 15:39:36.203"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>generate mobile</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Generate Mobile" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Mobile_Random}</var>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:39:36.204" level="INFO">${Mobile_Random} = 60192107</msg>
+<status status="PASS" starttime="20211004 15:39:36.204" endtime="20211004 15:39:36.204"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_MobileNumber}</arg>
+<arg>05${Mobile_Random}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:36.205" level="INFO">Typing text '0560192107' into text field 'id:MobileNumber'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:36.489" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-168.png"&gt;&lt;img src="selenium-screenshot-168.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:36.247" endtime="20211004 15:39:36.490"/>
+</kw>
+<msg timestamp="20211004 15:39:36.492" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:36.204" endtime="20211004 15:39:36.492"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:39:36.204" endtime="20211004 15:39:36.492"/>
+</kw>
+<kw name="Generate Mobile" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Mobile_Random}</var>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:39:36.697" level="INFO">${Mobile_Random} = 17826060</msg>
+<status status="PASS" starttime="20211004 15:39:36.696" endtime="20211004 15:39:36.697"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_MobileNumber}</arg>
+<arg>05${Mobile_Random}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:36.699" level="INFO">Typing text '0517826060' into text field 'id:MobileNumber'.</msg>
+<status status="PASS" starttime="20211004 15:39:36.698" endtime="20211004 15:39:36.809"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:36.695" endtime="20211004 15:39:36.809"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:36.203" endtime="20211004 15:39:36.809"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:38.826" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211004 15:39:36.809" endtime="20211004 15:39:38.826"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>generate email</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Generate Email" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Email_Random}</var>
+<arg>10</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:39:38.826" level="INFO">${Email_Random} = 8GsKEBX6nN</msg>
+<status status="PASS" starttime="20211004 15:39:38.826" endtime="20211004 15:39:38.826"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${Email_Random}@test.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:38.826" level="INFO">Typing text '8GsKEBX6nN@test.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20211004 15:39:38.826" endtime="20211004 15:39:38.941"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:38.826" endtime="20211004 15:39:38.941"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:38.826" endtime="20211004 15:39:38.941"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>generate phone</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Generate Phone" library="Keywords">
+<kw name="Generate Random String" library="String">
+<var>${Phone_Random}</var>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20211004 15:39:38.942" level="INFO">${Phone_Random} = 47191957</msg>
+<status status="PASS" starttime="20211004 15:39:38.942" endtime="20211004 15:39:38.942"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phonenumber}</arg>
+<arg>01${Phone_Random}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:38.943" level="INFO">Typing text '0147191957' into text field 'id:PhoneNumber'.</msg>
+<status status="PASS" starttime="20211004 15:39:38.942" endtime="20211004 15:39:39.039"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:38.942" endtime="20211004 15:39:39.039"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:38.941" endtime="20211004 15:39:39.039"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:39.235" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-169.png"&gt;&lt;img src="selenium-screenshot-169.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:39.052" endtime="20211004 15:39:39.235"/>
+</kw>
+<msg timestamp="20211004 15:39:39.235" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:39.040" endtime="20211004 15:39:39.235"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:39.040" endtime="20211004 15:39:39.235"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:39.040" endtime="20211004 15:39:39.236"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:39.040" endtime="20211004 15:39:39.236"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:39.236" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:40.463" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-170.png"&gt;&lt;img src="selenium-screenshot-170.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:40.330" endtime="20211004 15:39:40.463"/>
+</kw>
+<msg timestamp="20211004 15:39:40.463" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 719)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:39.236" endtime="20211004 15:39:40.463"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:40.963" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:39:40.963" endtime="20211004 15:39:41.089"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:39.236" endtime="20211004 15:39:41.089"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:39.236" endtime="20211004 15:39:41.090"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:26.513" endtime="20211004 15:39:41.090"/>
+</kw>
+<kw name="Add exist person as manager" library="Keywords">
+<arg>${ExistManager_name}</arg>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${manager}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${manager}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:41.325" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-171.png"&gt;&lt;img src="selenium-screenshot-171.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:41.116" endtime="20211004 15:39:41.326"/>
+</kw>
+<msg timestamp="20211004 15:39:41.333" level="FAIL">Element with locator 'name:ManagerId' not found.</msg>
+<status status="FAIL" starttime="20211004 15:39:41.092" endtime="20211004 15:39:41.333"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.091" endtime="20211004 15:39:41.334"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>select from list by label</arg>
+<arg>${manager}</arg>
+<arg>${manager_name}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${manager}</arg>
+<arg>${manager_name}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211004 15:39:41.337" level="INFO">Selecting options from selection list 'name:ManagerId' by label حصة علي مسفر السلطان.</msg>
+<status status="PASS" starttime="20211004 15:39:41.337" endtime="20211004 15:39:41.485"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.336" endtime="20211004 15:39:41.485"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.091" endtime="20211004 15:39:41.485"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:41.703" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-172.png"&gt;&lt;img src="selenium-screenshot-172.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:41.504" endtime="20211004 15:39:41.703"/>
+</kw>
+<msg timestamp="20211004 15:39:41.704" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:41.487" endtime="20211004 15:39:41.704"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.486" endtime="20211004 15:39:41.704"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.486" endtime="20211004 15:39:41.704"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.486" endtime="20211004 15:39:41.704"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:41.705" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:42.922" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-173.png"&gt;&lt;img src="selenium-screenshot-173.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:42.800" endtime="20211004 15:39:42.922"/>
+</kw>
+<msg timestamp="20211004 15:39:42.922" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1066)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:41.705" endtime="20211004 15:39:42.922"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:43.438" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:39:43.438" endtime="20211004 15:39:43.489"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.705" endtime="20211004 15:39:43.490"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.705" endtime="20211004 15:39:43.491"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:41.705" endtime="20211004 15:39:43.491"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>200ms</arg>
+<arg>scroll to submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Scroll To Submit" library="Keywords">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>scroll element into view</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211004 15:39:43.498" endtime="20211004 15:39:43.785"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:43.497" endtime="20211004 15:39:43.785"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:43.496" endtime="20211004 15:39:43.785"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:43.494" endtime="20211004 15:39:43.785"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>200ms</arg>
+<arg>click submit</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:43.787" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:45.087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-174.png"&gt;&lt;img src="selenium-screenshot-174.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:44.918" endtime="20211004 15:39:45.087"/>
+</kw>
+<msg timestamp="20211004 15:39:45.087" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" id="btnSubmitForm" style="" class="btn btn-stepper-nav float-right"&gt;...&lt;/button&gt; is not clickable at point (57, 437). Other element would receive the click: &lt;div class="col-12 boxdataCol"&gt;...&lt;/div&gt;
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:43.787" endtime="20211004 15:39:45.087"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:45.588" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:46.860" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-175.png"&gt;&lt;img src="selenium-screenshot-175.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:46.707" endtime="20211004 15:39:46.860"/>
+</kw>
+<msg timestamp="20211004 15:39:46.860" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1562)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:45.588" endtime="20211004 15:39:46.860"/>
+</kw>
+<msg timestamp="20211004 15:39:46.860" level="FAIL">Keyword 'click button' failed after retrying for 2 seconds. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (57, 1562)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:43.786" endtime="20211004 15:39:46.860"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:39:43.786" endtime="20211004 15:39:46.860"/>
+</kw>
+<kw name="click submit" library="Keywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>500ms</arg>
+<arg>click button</arg>
+<arg>${btn_Submit}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:47.061" level="INFO">Clicking button 'id:btnSubmitForm'.</msg>
+<status status="PASS" starttime="20211004 15:39:47.061" endtime="20211004 15:39:47.096"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:47.061" endtime="20211004 15:39:47.096"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:47.061" endtime="20211004 15:39:47.096"/>
+</kw>
+<status status="PASS" starttime="20211004 15:39:43.786" endtime="20211004 15:39:47.096"/>
+</kw>
+<kw name="Skip License" library="Keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(5000,5000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211004 15:39:47.098" level="INFO">Executing JavaScript:
+window.scrollTo(5000,5000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20211004 15:39:47.098" endtime="20211004 15:39:47.100"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:50.115" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211004 15:39:47.100" endtime="20211004 15:39:50.115"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_skiplic}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211004 15:39:50.115" endtime="20211004 15:39:50.152"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211004 15:39:52.156" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211004 15:39:50.152" endtime="20211004 15:39:52.156"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_skiplic}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211004 15:39:52.156" level="INFO">Clicking button 'xpath://*[@id='root']/div[1]/main/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/div/div/button[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 15:39:53.444" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-176.png"&gt;&lt;img src="selenium-screenshot-176.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 15:39:53.259" endtime="20211004 15:39:53.444"/>
+</kw>
+<msg timestamp="20211004 15:39:53.444" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (631, 612)
+  (Session info: chrome=94.0.4606.71)
+</msg>
+<status status="FAIL" starttime="20211004 15:39:52.156" endtime="20211004 15:39:53.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 15:39:53.444" endtime="20211004 15:39:53.444"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>4</arg>
+<arg>3s</arg>
+<arg>click button</arg>
+<arg>${btn_skipyes}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="NOT RUN" starttime="20211004 15:39:53.444" endtime="20211004 15:39:53.444"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:39:47.096" endtime="20211004 15:39:53.444"/>
+</kw>
+<status status="FAIL" starttime="20211004 15:38:47.796" endtime="20211004 15:39:53.444">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (631, 612)
+  (Session info: chrome=94.0.4606.71)
+</status>
+</test>
+<status status="FAIL" starttime="20211004 15:38:47.796" endtime="20211004 15:39:53.460"/>
+</suite>
+<status status="FAIL" starttime="20211004 15:37:42.915" endtime="20211004 15:39:53.460"/>
+</suite>
+<status status="FAIL" starttime="20211004 15:37:42.899" endtime="20211004 15:39:53.460"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="New">New</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="TestCases">New.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="baladyLic">New.TestCases.baladyLic</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s2" name="Est">New.TestCases.Est</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s3" name="Estdel">New.TestCases.Estdel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
